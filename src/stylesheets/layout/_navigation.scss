@@ -1,3 +1,36 @@
-/***************************************
-    Navigation Menu
-***************************************/
+.navigation{
+    opacity: 0;
+    visibility: hidden;
+    background-color: $color-primary-light;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 200;
+    transition: all .2s;
+
+    &__box{
+        margin-left: 10rem;
+        list-style: none;
+        position: absolute;
+        bottom: 15rem;
+    }
+
+    &__item{
+        padding: 1rem;
+    }
+
+    &__link{
+        text-decoration: none;
+        color: $color-secondary;
+        font-size: 2.8rem;
+        padding: .6rem 1rem;
+        border: none;
+        transition: all .2s;
+        &:hover{
+            background-color: $color-secondary-dark;
+            color: $color-primary;
+        }
+    }
+}

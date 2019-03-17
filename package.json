@@ -3,18 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "classnames": "^2.2.6",
+    "jwt-decode": "^2.2.0",
+    "moment": "^2.24.0",
     "node-sass": "^4.11.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-scripts": "2.1.8"
+    "react-moment": "^0.8.4",
+    "react-redux": "^6.0.1",
+    "react-router-dom": "^4.4.0",
+    "react-scripts": "^2.1.8",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "watch:sass": "node-sass --watch ./src/stylesheets/main.scss -o ./src/",
-    "dev": "concurrently \"npm run start \" \"npm run watch:sass\" "
+    "watch:sass": "node-sass --watch ./src/stylesheets/main.scss -o ./src/"
   },
   "eslintConfig": {
     "extends": "react-app"

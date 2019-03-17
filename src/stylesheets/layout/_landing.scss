@@ -1,0 +1,14 @@
+.landing{
+    @include absCenter;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__logo{
+        width: 40rem;
+    }
+    button{
+        margin-top: 2rem;
+    }
+    
+}

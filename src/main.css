@@ -1,0 +1,178 @@
+/*****************************
+    Functions
+ *****************************/
+/*************************************
+    Mixins
+*************************************/
+/******************************
+    Variables
+******************************/
+/****************************
+    CSS Animations 
+ ****************************/
+/******************************
+    Global styles and resets
+ *****************************/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  background-color: #efefef; }
+
+::selection {
+  background-color: rgba(239, 239, 239, 0.8);
+  color: #fff; }
+
+/*********************************
+    global typography styles 
+*********************************/
+.heading__primary {
+  font-size: 2.3rem;
+  font-weight: 400; }
+
+/************************************
+    Utility classes
+ ***********************************/
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+
+.u-margin-bottom-huge {
+  margin-bottom: 10rem !important; }
+
+.u-margin-top-small {
+  margin-top: 1.5rem !important; }
+
+.u-margin-top-medium {
+  margin-top: 4rem !important; }
+
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+
+.u-margin-top-huge {
+  margin-top: 10rem !important; }
+
+.btn {
+  padding: 1rem 4rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: 2px solid #212529; }
+  .btn:hover {
+    box-shadow: 0 4px 10px rgba(19, 21, 24, 0.15); }
+  .btn--dark {
+    background-color: #131518;
+    color: #fbfbfb; }
+    .btn--dark:hover {
+      background-color: #15171b; }
+  .btn--light {
+    color: #131518;
+    background-color: #efefef;
+    margin-left: 2rem; }
+    .btn--light:hover {
+      background-color: #f2f2f2; }
+
+/****************************************
+     Contains the landing page header  
+*****************************************/
+.header {
+  height: 5rem;
+  background-color: #fbfbfb;
+  box-shadow: 1px 4px 10px rgba(33, 37, 41, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+  top: 0; }
+  .header__logo {
+    height: 4rem;
+    margin-left: 10rem; }
+  .header__button {
+    border: none;
+    display: inline-block;
+    width: 4rem;
+    height: 2rem;
+    margin-right: 6rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; }
+    .header__button--top {
+      width: 2.8rem;
+      height: .3rem;
+      background-color: black; }
+    .header__button--middle {
+      width: 2rem;
+      height: .3rem;
+      background-color: black; }
+    .header__button--bottom {
+      width: 2.8rem;
+      height: .3rem;
+      background-color: black; }
+
+.navigation {
+  opacity: 0;
+  visibility: hidden;
+  background-color: #fbfbfb;
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 200;
+  transition: all .2s; }
+  .navigation__box {
+    margin-left: 10rem;
+    list-style: none;
+    position: absolute;
+    bottom: 15rem; }
+  .navigation__item {
+    padding: 1rem; }
+  .navigation__link {
+    text-decoration: none;
+    color: #212529;
+    font-size: 2.8rem;
+    padding: .6rem 1rem;
+    border: none;
+    transition: all .2s; }
+    .navigation__link:hover {
+      background-color: #131518;
+      color: #efefef; }
+
+.landing {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .landing__logo {
+    width: 40rem; }
+  .landing button {
+    margin-top: 2rem; }
+
+/************************************
+	Landing page
+************************************/

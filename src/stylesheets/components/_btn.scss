@@ -1,0 +1,31 @@
+.btn{
+    padding: 1rem 4rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 2px solid $color-secondary;
+
+    &:hover{
+        box-shadow: 0 4px 10px rgba($color-secondary-dark, .15);
+    }
+
+
+    &--dark{
+        background-color: $color-secondary-dark;
+        color: $color-primary-light;
+        &:hover{
+            background-color: lighten($color-secondary-dark, 1%);
+        }
+    }
+
+    &--light{
+        color: $color-secondary-dark;
+        background-color: $color-primary;
+        margin-left: 2rem;
+
+        &:hover{
+            background-color: lighten($color-primary, 1%);
+        }
+    }
+}

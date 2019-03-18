@@ -6,6 +6,7 @@ import "./main.css";
 import Header from "../src/components/layout/Header";
 import Navigation from "../src/components/layout/Navigation";
 import Landing from "../src/components/layout/Landing";
+import Login from "../src/components/auth/Login";
 class App extends Component {
   render() {
     return (
@@ -13,7 +14,8 @@ class App extends Component {
         <div className="App">
           <Header />
           <Navigation />
-          <Landing />
+          <Route exact path="/" component={Landing} />
+          <Route exact path="/login" component={Login} />
         </div>
       </Router>
     );

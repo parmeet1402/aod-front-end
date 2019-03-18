@@ -16,7 +16,9 @@ class Header extends Component {
   render() {
     return (
       <header className="header">
-        <img src={Logo} alt="logo" className="header__logo" />
+        <Link to="/">
+          <img src={Logo} alt="logo" className="header__logo" />
+        </Link>
         <div className="header__button" onClick={this.onHeaderButtonClick}>
           <div className="header__button--top">&nbsp;</div>
           <div className="header__button--middle">&nbsp;</div>

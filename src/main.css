@@ -35,8 +35,12 @@ body {
     global typography styles 
 *********************************/
 .heading__primary {
-  font-size: 2.3rem;
+  font-size: 2.4rem;
   font-weight: 400; }
+
+.heading__secondary {
+  font-size: 2rem;
+  font-weight: 500; }
 
 /************************************
     Utility classes
@@ -89,6 +93,50 @@ body {
     .btn--light:hover {
       background-color: #f2f2f2; }
 
+/* =======================
+    TextField Component
+=========================*/
+.textField {
+  position: relative; }
+  .textField--trans {
+    background: none;
+    border: none;
+    outline: none;
+    width: 28rem;
+    transform: translateX(0.5rem); }
+    .textField--trans::placeholder {
+      color: #555e69; }
+    .textField--trans + span::before {
+      content: "";
+      display: block;
+      width: 27rem;
+      height: 1px;
+      margin-top: .2rem;
+      background-color: #131518;
+      margin-bottom: 2rem; }
+
+/* =======================
+    Password Component
+=========================*/
+.passwordField {
+  position: relative; }
+  .passwordField--trans {
+    background: none;
+    border: none;
+    outline: none;
+    width: 28rem;
+    transform: translateX(0.5rem); }
+    .passwordField--trans::placeholder {
+      color: #555e69; }
+    .passwordField--trans + span::before {
+      content: "";
+      display: block;
+      width: 27rem;
+      height: 1px;
+      margin-top: .2rem;
+      background-color: #131518;
+      margin-bottom: 5rem; }
+
 /****************************************
      Contains the landing page header  
 *****************************************/
@@ -105,7 +153,8 @@ body {
   top: 0; }
   .header__logo {
     height: 4rem;
-    margin-left: 10rem; }
+    margin-left: 10rem;
+    cursor: pointer; }
   .header__button {
     border: none;
     display: inline-block;
@@ -169,10 +218,33 @@ body {
   flex-direction: column;
   align-items: center; }
   .landing__logo {
-    width: 40rem; }
+    width: 40rem;
+    cursor: pointer; }
   .landing button {
     margin-top: 2rem; }
 
 /************************************
 	Landing page
 ************************************/
+/* =====================
+    Login
+========================*/
+.login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .login > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .login p {
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    width: 70%; }
